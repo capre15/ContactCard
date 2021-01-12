@@ -1,25 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import Contact from "./componenet/contact"
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render (){
+    return(
+      <div>
+    <Contact name="jay"
+      mobileNumber="1234"
+      email="jay@gmail.com"
+      workPhone="2468"
+      />
+      <Contact name="jacky"
+      mobileNumber="12345"
+      email="jacky@gmail.com"
+      workPhone="246810"
+      />
+      <Contact name="jackie"
+      mobileNumber="123456"
+      email="jackie@gmail.com"
+      workPhone="246811"
+      />
+      </div>
+    )
+  
+  }
+  
+  
 }
 
 export default App;
